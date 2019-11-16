@@ -98,10 +98,10 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #404040;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
-		font-weight: 400;
+		/* font-size: 16pt; */
+		/* font-weight: 400; */
 		line-height: 1.75em;
 	}
 
@@ -122,8 +122,8 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #787878;
-		font-weight: 400;
+		color: #404040;;
+		font-weight: 800;
 	}
 
 	em, i {
@@ -135,8 +135,8 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
-		font-weight: 400;
+		color: #404040;
+		/* font-weight: 400; */
 		line-height: 1em;
 		margin: 0 0 1em 0;
 	}
@@ -1801,7 +1801,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #787878;
+		color: #404040;;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 400;
@@ -1855,7 +1855,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #787878;
+			color: #404040;
 			background: #fff;
 		}
 
@@ -1938,7 +1938,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #787878;
+			background: #404040;
 			border-color: #787878;
 			color: #fff;
 			content: '\f00c';
@@ -2038,7 +2038,9 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 0.35em;
+		/* border-radius: 0.35em; */
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
 		border: 0;
 		display: inline-block;
 		position: relative;
@@ -2050,7 +2052,8 @@ input, select, textarea {
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
 			background: url("images/overlay.png");
-			border-radius: 0.35em;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
 			content: '';
 			display: block;
 			height: 100%;
@@ -2070,7 +2073,8 @@ input, select, textarea {
 				-webkit-transition: opacity 0.2s ease-in-out;
 				-ms-transition: opacity 0.2s ease-in-out;
 				transition: opacity 0.2s ease-in-out;
-				border-radius: 0.35em;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
 				border: solid 3px rgba(255, 255, 255, 0.5);
 				color: #fff;
 				content: 'View';
@@ -2099,7 +2103,8 @@ input, select, textarea {
 			}
 
 		.image img {
-			border-radius: 0.35em;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
 			display: block;
 		}
 
@@ -2125,7 +2130,7 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 0em 0;
 			width: 100%;
 		}
 
@@ -2389,7 +2394,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #787878;
+			color: #404040;
 			font-size: 0.9em;
 			font-weight: 400;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2447,7 +2452,7 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 0.35em;
 		border: solid 3px #efefef;
-		color: #787878 !important;
+		color: #404040 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
@@ -2554,12 +2559,21 @@ input, select, textarea {
 
 /* Work Item */
 
+	.card-container {
+		text-align: center;
+		background: #dfe0e088;
+		transition: 0.3s;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+
 	.work-item {
 		margin: 0 0 1.5em 0;
+		
 	}
 
 		.work-item .image {
-			margin: 0 0 1em 0;
+			margin: 0 0 0em 0;
 		}
 
 		.work-item h3 {
@@ -2592,13 +2606,13 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #1f1815;
+		background-color: #0e342c;
 		background-attachment: scroll,								scroll;
 		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
-		color: rgba(255, 255, 255, 0.5);
+		color: #0e342c;
 		height: 100%;
 		left: 0;
 		padding: 8em 4em;
@@ -2629,7 +2643,10 @@ input, select, textarea {
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 1em;
+			line-height: 1.75em;
+			margin: 0;
 		}
 
 		#header h1 {
@@ -2706,7 +2723,7 @@ input, select, textarea {
 
 .progressBarContainer {
 	width: 300;
-	max-width: 80%;
+	max-width: 90%;
 	height: 26px;
 	height: 1.66em;
 	background: #e6eae3;
